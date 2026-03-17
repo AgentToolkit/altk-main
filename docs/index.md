@@ -8,8 +8,8 @@
 
 <tr>
 <td align="center">
-  <a href="https://github.com/AgentToolkit/" style="text-decoration: none; color: inherit;"><b>Star us on GitHub!</b></a> &nbsp; <a href="https://github.com/AgentToolkit/">
-    <img src="https://img.shields.io/github/stars/AgentToolkit/agent-lifecycle-toolkit.svg?style=social" alt="GitHub stars" style="vertical-align: middle; height: 30px;">
+  <a href="https://github.com/AgentToolkit/altk-main" style="text-decoration: none; color: inherit;"><b>Star us on GitHub!</b></a> &nbsp; <a href="https://github.com/AgentToolkit/altk-main">
+    <img src="https://img.shields.io/github/stars/AgentToolkit/altk-main.svg?style=social" alt="GitHub stars" style="vertical-align: middle; height: 30px;">
   </a>
 </td>
 </tr>
@@ -34,6 +34,8 @@ The Agent Lifecycle Toolkit helps agent builders improve their agent with minima
 - *Does your agent make the same mistake twice?*
 <br> [Kaizen](kaizen.md) generates guidelines from past trajectories and injects them into the agent's prompt to help the agent avoid repeating the same mistake. 
 
+
+
 ## Installation
 To use ALTK, simply install it from your package manager, e.g. pip:
 
@@ -44,3 +46,5 @@ pip install kaizen
 ## Getting Started
 Refer to the following [quick start](kaizen.md#quick-start) guide.
 
+## Can't find what you're looking for?
+If you were looking for some of the ALTK components released in 2025, you can still find them here: https://agenttoolkit.github.io/agent-lifecycle-toolkit/
