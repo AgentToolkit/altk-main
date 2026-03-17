@@ -27,9 +27,9 @@
 ## What is ALTK?
 The Agent Lifecycle Toolkit helps agent builders improve their agent with minimal integration effort and setup. These components allow the agent to improve over time through evaluation, testing, analytics, and continuous improvement — from first deployment through production maturity and beyond.
 
-<td align="center">
-<img alt="" src="assets/agent_errors.png" height="120">
-</td>
+<div align="center">
+<img alt="Agent errors visualization" src="assets/agent_errors.png" height="120">
+</div>
 
 - *Does your agent make the same mistake twice?*
 <br> [Kaizen](kaizen.md) generates tips from past trajectories and injects them into the agent's prompt to help the agent avoid repeating the same mistake. 
