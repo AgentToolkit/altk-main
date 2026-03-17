@@ -1,0 +1,43 @@
+# Site settings
+title: Agent Lifecycle Toolkit (ALTK)
+description: Delivering plug-and-play, framework-agnostic technology agent evolution capabilities for improved performance
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Navigation
+header_pages:
+  - index.md
+  - kaizen.md
+
+# GitHub repository
+github_username: AgentToolkit
+repository: AgentToolkit/agent-lifecycle-toolkit
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Made with Bob
