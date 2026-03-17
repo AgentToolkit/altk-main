@@ -70,7 +70,7 @@ theme:
     repo: fontawesome/brands/github
 
 nav:
-  - Home: index.md
+  - Agent Lifecycle Toolkit: index.md
   - Kaizen: kaizen.md
 
 extra_css:
