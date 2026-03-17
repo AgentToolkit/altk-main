@@ -1,9 +1,3 @@
----
-layout: default
-title: Home
-nav_order: 1
----
-
 <h1 align="center" >
     <img alt="Agent Lifecycle Toolkit (ALTK) logo" src="assets/logo.png" height="120">
 </h1>
