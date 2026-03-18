@@ -16,6 +16,7 @@ copyright: >
 # Configuration
 theme:
   name: material
+  custom_dir: docs/overrides
   features:
     - announce.dismiss
     - content.tabs.link

@@ -1,3 +1,27 @@
+/* Announcement Banner Styling */
+.md-banner {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    padding: 0.8rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.md-banner__inner {
+    padding: 0 1rem;
+}
+
+.md-banner a {
+    color: var(--md-primary-bg-color);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.md-banner a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
 /* Make images wider and more prominent */
 .md-content img {
     max-width: 100%;
