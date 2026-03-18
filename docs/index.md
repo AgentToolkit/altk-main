@@ -23,35 +23,26 @@
 </tr>
 </div>
 
----
 
 ## What is ALTK?
+The Agent Lifecycle Toolkit helps agent builders improve their agents over time with minimal integration effort. These components allow agents to learn from their own trajectories — evolving continuously from first deployment through production maturity and beyond.
 
-The Agent Lifecycle Toolkit helps agent builders improve their agent with minimal integration effort and setup. These components allow the agent to improve over time through evaluation, testing, analytics, and continuous improvement — from first deployment through production maturity and beyond.
+<td align="center">
+<img alt="Agent errors visualization" src="assets/agent_errors.png" height="120">
+</td>
 
-<div align="center">
-<img alt="Agent errors visualization" src="assets/agent_errors.png">
-</div>
+- *Does your agent make the same mistake twice?*
+<br> [ALTK-Evolve](evolve.md) generates guidelines from past trajectories and injects them into the agent's prompt to help avoid repeating mistakes.
 
-### Key Features
-
-- **Self-Improving Agents**: Does your agent make the same mistake twice? [ALTK-Evolve](evolve.md) generates guidelines from past trajectories and injects them into the agent's prompt to help the agent avoid repeating the same mistake.
-
-- **Framework Agnostic**: Works with any agent framework or implementation
-
-- **Minimal Integration**: Easy to integrate with existing agent systems
-
-- **Production Ready**: Built for real-world deployment and scale
-
----
 
 ## Installation
-
 To use ALTK, simply install it from your package manager, e.g. pip:
 
 ```bash
 pip install kaizen
 ```
+
+More [detailed setup instructions](evolve.md#quick-start) are available in the docs.
 
 ---
 
