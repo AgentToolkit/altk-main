@@ -73,7 +73,7 @@ theme:
 
 nav:
   - Agent Lifecycle Toolkit: index.md
-  - Kaizen: kaizen.md
+  - ALTK-Evolve: evolve.md
 
 extra_css:
   - stylesheets/extra.css

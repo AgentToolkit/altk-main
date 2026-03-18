@@ -35,7 +35,7 @@ The Agent Lifecycle Toolkit helps agent builders improve their agent with minima
 
 ### Key Features
 
-- **Self-Improving Agents**: Does your agent make the same mistake twice? [Kaizen](kaizen.md) generates guidelines from past trajectories and injects them into the agent's prompt to help the agent avoid repeating the same mistake.
+- **Self-Improving Agents**: Does your agent make the same mistake twice? [ALTK-Evolve](evolve.md) generates guidelines from past trajectories and injects them into the agent's prompt to help the agent avoid repeating the same mistake.
 
 - **Framework Agnostic**: Works with any agent framework or implementation
 
@@ -57,17 +57,17 @@ pip install kaizen
 
 ## Getting Started
 
-Refer to the following [quick start](kaizen.md#quick-start) guide to begin using Kaizen with your agents.
+Refer to the following [quick start](evolve.md#quick-start) guide to begin using ALTK-Evolve with your agents.
 
 ---
 
 ## Components
 
-### Kaizen
+### ALTK-Evolve
 
-Kaizen is a system designed to help agents improve over time by learning from their trajectories. It uses a combination of an MCP server for tool integration, vector storage for memory, and LLM-based conflict resolution to refine its knowledge base.
+ALTK-Evolve is a system designed to help agents improve over time by learning from their trajectories. It uses a combination of an MCP server for tool integration, vector storage for memory, and LLM-based conflict resolution to refine its knowledge base.
 
-[Learn more about Kaizen →](kaizen.md)
+[Learn more about ALTK-Evolve →](evolve.md)
 
 ---
 

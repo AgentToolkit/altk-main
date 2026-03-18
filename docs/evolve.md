@@ -1,8 +1,8 @@
-# Kaizen
+# ALTK-Evolve
 
 Self-improving agents through iterations.
 
-Kaizen is a system designed to help agents improve over time by learning from their trajectories. It uses a combination of an MCP server for tool integration, vector storage for memory, and LLM-based conflict resolution to refine its knowledge base.
+ALTK-Evolve is a system designed to help agents improve over time by learning from their trajectories. It uses a combination of an MCP server for tool integration, vector storage for memory, and LLM-based conflict resolution to refine its knowledge base.
 
 ## Features
 
@@ -55,11 +55,11 @@ npx @modelcontextprotocol/inspector@latest http://127.0.0.1:8201/sse --cli --met
 - `create_entity(content: str, entity_type: str, metadata: str | None, enable_conflict_resolution: bool)`: Create a single entity in the namespace.
 - `delete_entity(entity_id: str)`: Delete a specific entity by its ID.
 
-## Tip Provenance
+## Guideline Provenance
 
-Kaizen automatically tracks the origin of every guideline it generates or stores. Every tip entity contains `metadata` identifying its source:
-- `creation_mode`: Identifies how the tip was created (`auto-phoenix` via trace observability, `auto-mcp` via trajectory saving tools, or `manual`).
-- `source_task_id`: The ID of the original trace or task that inspired the tip, providing full audibility.
+ALTK-Evolve automatically tracks the origin of every guideline it generates or stores. Every guideline entity contains `metadata` identifying its source:
+- `creation_mode`: Identifies how the guideline was created (`auto-phoenix` via trace observability, `auto-mcp` via trajectory saving tools, or `manual`).
+- `source_task_id`: The ID of the original trace or task that inspired the guideline, providing full audibility.
 
 
 
@@ -85,11 +85,11 @@ uv run pytest -m phoenix
 
 #### End-to-End (E2E) Low-Code Verification
 
-To run the full end-to-end verification pipeline (Agent -> Trace -> Tip):
+To run the full end-to-end verification pipeline (Agent -> Trace -> Guideline):
 
 ```bash
 KAIZEN_E2E=true uv run pytest tests/e2e/test_e2e_pipeline.py -s
 ```
 
 ## More Details
-Refer to Kaizen's [GitHub page](https://github.com/AgentToolkit/kaizen/tree/main) for details. 
+Refer to ALTK-Evolve's [GitHub page](https://github.com/AgentToolkit/kaizen/tree/main) for details. 
