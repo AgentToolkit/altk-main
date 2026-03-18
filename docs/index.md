@@ -27,9 +27,9 @@
 ## What is ALTK?
 The Agent Lifecycle Toolkit helps agent builders improve their agents over time with minimal integration effort. These components allow agents to learn from their own trajectories — evolving continuously from first deployment through production maturity and beyond.
 
-<td align="center">
-<img alt="Agent errors visualization" src="assets/agent_errors.png" height="120">
-</td>
+<div align="center">
+<img alt="Agent errors visualization" src="assets/agent_errors.png">
+</div>
 
 - *Does your agent make the same mistake twice?*
 <br> [ALTK-Evolve](evolve.md) generates guidelines from past trajectories and injects them into the agent's prompt to help avoid repeating mistakes.
