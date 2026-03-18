@@ -1,0 +1,64 @@
+/* Make images wider and more prominent */
+.md-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Center images in divs */
+div[align="center"] img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Make the agent_errors.png image much wider */
+img[alt*="Agent errors"],
+img[src*="agent_errors"] {
+    max-width: 900px !important;
+    width: 90% !important;
+    height: auto !important;
+}
+
+/* Improve spacing around images */
+.md-content__inner > div[align="center"] {
+    margin: 3rem 0;
+}
+
+/* Better formatting for the hero section */
+.md-content h1:first-child {
+    margin-top: 0;
+}
+
+/* Style for centered content */
+.md-content div[style*="text-align: center"] {
+    margin: 2rem 0;
+}
+
+/* Improve link styling in centered sections */
+.md-content div[style*="text-align: center"] a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Better spacing for sections */
+.md-content h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Improve code block styling */
+.md-content pre {
+    margin: 1.5rem 0;
+}
+
+/* Better list styling */
+.md-content ul {
+    margin: 1rem 0;
+}
+
+.md-content li {
+    margin: 0.5rem 0;
+}
+
+/* Made with Bob */

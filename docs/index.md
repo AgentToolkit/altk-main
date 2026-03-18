@@ -23,28 +23,54 @@
 </tr>
 </div>
 
+---
 
 ## What is ALTK?
+
 The Agent Lifecycle Toolkit helps agent builders improve their agent with minimal integration effort and setup. These components allow the agent to improve over time through evaluation, testing, analytics, and continuous improvement — from first deployment through production maturity and beyond.
 
 <div align="center">
-<img alt="Agent errors visualization" src="assets/agent_errors.png" height="120">
+<img alt="Agent errors visualization" src="assets/agent_errors.png">
 </div>
 
-- *Does your agent make the same mistake twice?*
-<br> [Kaizen](kaizen.md) generates guidelines from past trajectories and injects them into the agent's prompt to help the agent avoid repeating the same mistake. 
+### Key Features
 
+- **Self-Improving Agents**: Does your agent make the same mistake twice? [Kaizen](kaizen.md) generates guidelines from past trajectories and injects them into the agent's prompt to help the agent avoid repeating the same mistake.
 
+- **Framework Agnostic**: Works with any agent framework or implementation
+
+- **Minimal Integration**: Easy to integrate with existing agent systems
+
+- **Production Ready**: Built for real-world deployment and scale
+
+---
 
 ## Installation
+
 To use ALTK, simply install it from your package manager, e.g. pip:
 
 ```bash
 pip install kaizen
 ```
 
+---
+
 ## Getting Started
-Refer to the following [quick start](kaizen.md#quick-start) guide.
+
+Refer to the following [quick start](kaizen.md#quick-start) guide to begin using Kaizen with your agents.
+
+---
+
+## Components
+
+### Kaizen
+
+Kaizen is a system designed to help agents improve over time by learning from their trajectories. It uses a combination of an MCP server for tool integration, vector storage for memory, and LLM-based conflict resolution to refine its knowledge base.
+
+[Learn more about Kaizen →](kaizen.md)
+
+---
 
 ## Can't find what you're looking for?
+
 If you were looking for some of the ALTK components released in 2025, you can still find them [here](https://agenttoolkit.github.io/agent-lifecycle-toolkit/).
