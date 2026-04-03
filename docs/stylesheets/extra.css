@@ -1,88 +1,65 @@
-/* Announcement Banner Styling */
-.md-banner {
-    background-color: var(--md-primary-fg-color);
-    color: var(--md-primary-bg-color);
-    padding: 0.8rem 0;
-    text-align: center;
-    font-size: 0.9rem;
+/* ─── Project Switcher Nav Bar ─────────────────────────────────────────────── */
+/* Sits inside .md-header, between the main bar and the navigation tabs       */
+
+.project-nav {
+  background-color: var(--md-primary-fg-color);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  width: 100%;
 }
 
-.md-banner__inner {
-    padding: 0 1rem;
+.project-nav__inner {
+  display: flex;
+  align-items: center;
+  padding: 0 0.8rem;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
 }
 
-.md-banner a {
-    color: var(--md-primary-bg-color);
-    text-decoration: underline;
-    font-weight: 500;
+.project-nav__inner::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
-.md-banner a:hover {
-    text-decoration: none;
-    opacity: 0.9;
+.project-nav__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
 }
 
-/* Make images wider and more prominent */
-.md-content img {
-    max-width: 100%;
-    height: auto;
+.project-nav__item:hover {
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom-color: rgba(255, 255, 255, 0.35);
 }
 
-/* Center images in divs */
-div[align="center"] img {
-    display: block;
-    margin: 2rem auto;
-    max-width: 800px;
-    width: 100%;
+.project-nav__item--active {
+  color: #ffffff;
+  border-bottom-color: var(--md-accent-fg-color, #fff);
+  pointer-events: none;
 }
 
-/* Make the agent_errors.png image much wider */
-img[alt*="Agent errors"],
-img[src*="agent_errors"] {
-    max-width: 900px !important;
-    width: 90% !important;
-    height: auto !important;
+.project-nav__icon {
+  font-size: 0.9em;
+  opacity: 0.8;
 }
 
-/* Improve spacing around images */
-.md-content__inner > div[align="center"] {
-    margin: 3rem 0;
+/* Slightly deeper tint in dark mode */
+[data-md-color-scheme="slate"] .project-nav {
+  border-bottom-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Better formatting for the hero section */
-.md-content h1:first-child {
-    margin-top: 0;
+@media screen and (max-width: 480px) {
+  .project-nav__item {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.65rem;
+  }
 }
 
-/* Style for centered content */
-.md-content div[style*="text-align: center"] {
-    margin: 2rem 0;
-}
-
-/* Improve link styling in centered sections */
-.md-content div[style*="text-align: center"] a {
-    text-decoration: none;
-    font-weight: 500;
-}
-
-/* Better spacing for sections */
-.md-content h2 {
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-}
-
-/* Improve code block styling */
-.md-content pre {
-    margin: 1.5rem 0;
-}
-
-/* Better list styling */
-.md-content ul {
-    margin: 1rem 0;
-}
-
-.md-content li {
-    margin: 0.5rem 0;
-}
-
-/* Made with Bob */

@@ -7,7 +7,7 @@ site_description: >-
 # Repository
 repo_name: AgentToolkit/altk-main
 repo_url: https://github.com/AgentToolkit/altk-main
-
+edit_uri: tree/main/docs/
 # Copyright
 copyright: >
   Copyright &copy; 2025 Agent Lifecycle Toolkit (ALTK) project –
@@ -18,21 +18,10 @@ theme:
   name: material
   custom_dir: docs/overrides
   features:
-    - announce.dismiss
     - content.tabs.link
     - content.code.annotate
     - content.code.copy
     - content.tooltips
-    - navigation.footer
-    - navigation.tabs
-    - navigation.indexes
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
-    - navigation.path
-    - navigation.sections
-    - navigation.top
-    - navigation.tracking
     - search.suggest
     - toc.follow
   language: en
@@ -51,9 +40,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
   favicon: assets/logo-32x32.png
   logo: assets/logo-512x512.png
   icon:
@@ -61,15 +47,32 @@ theme:
 
 nav:
   - Home: index.md
-  - ALTK-Evolve: evolve.md
 
 extra_css:
   - stylesheets/extra.css
 
 extra:
+  # Project switcher nav bar — shown across all ALTK sites.
+  # Set active: true on whichever project this repo represents.
+  # Other repos should copy this list with their own entry marked active.
+  projects:
+    - name: ALTK
+      url: https://agenttoolkit.github.io/altk-main/
+      active: true
+    - name: Evolve
+      url: https://agenttoolkit.github.io/altk-evolve/
+    - name: Agent Lifecycle Toolkit
+      url: https://agenttoolkit.github.io/agent-lifecycle-toolkit/
+    # Add more projects here:
+    # - name: Another Project
+    #   url: https://agenttoolkit.github.io/another-project/
+    #   icon: "🔧"   # optional emoji or text icon
+
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/AgentToolkit/altk-main
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@AgentToolkit
   consent:
     title: Cookie consent
     description: >-
@@ -79,20 +82,22 @@ extra:
       make our documentation better.
 
 markdown_extensions:
-  - toc:
-      permalink: true
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.mark
-  - attr_list
+  - pymdownx.snippets
+  - pymdownx.superfences
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
 
 plugins:
   - search
