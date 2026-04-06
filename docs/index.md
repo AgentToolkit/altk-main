@@ -13,11 +13,11 @@ The Agent Lifecycle Toolkit helps agent builders improve their agents over time 
   <figcaption>Does your agent make the same mistake twice?</figcaption>
 </figure>
 
-[Evolve](../evolve) generates guidelines from past trajectories and injects them into the agent's prompt to help avoid repeating mistakes.
+[Evolve](../altk-evolve) generates guidelines from past trajectories and injects them into the agent's prompt to help avoid repeating mistakes.
 
 Evolve is a system designed to help agents improve over time by learning from their trajectories. It uses a combination of an MCP server for tool integration, vector storage for memory, and LLM-based conflict resolution to refine its knowledge base.
 
-[Learn more about Evolve →](../evolve)
+[Learn more about Evolve →](../altk-evolve)
 
 ---
 ## Can't find what you're looking for?
