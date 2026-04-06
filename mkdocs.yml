@@ -61,8 +61,6 @@ extra:
       active: true
     - name: Evolve
       url: https://agenttoolkit.github.io/altk-evolve/
-    - name: Agent Lifecycle Toolkit
-      url: https://agenttoolkit.github.io/agent-lifecycle-toolkit/
     # Add more projects here:
     # - name: Another Project
     #   url: https://agenttoolkit.github.io/another-project/

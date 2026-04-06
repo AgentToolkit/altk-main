@@ -19,11 +19,6 @@ Evolve is a system designed to help agents improve over time by learning from th
 
 [Learn more about Evolve →](../evolve)
 
-## Build
-Components crafted to slot easily into agent pipelines. Address gaps in the stages of your agent lifecycle: in reasoning, tool calling errors, or outputting guidelines.
-
-[Learn more about the Agent Lifecycle Toolkit →](../agent-lifecycle-toolkit)
-
 ---
 ## Can't find what you're looking for?
 
