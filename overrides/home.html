@@ -1,0 +1,70 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+  <style>
+    /* Remove content area max-width so the hero can go full-width */
+    .md-content__inner {
+      max-width: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* ── Hero ────────────────────────────────────────────────────────────── */
+    .mdx-hero {
+      background: linear-gradient(
+        180deg,
+        var(--md-primary-fg-color) 0%,
+        hsla(var(--md-hue), 15%, 14%, 1) 100%
+      );
+      padding: 4rem 1.5rem 5rem;
+      text-align: center;
+    }
+
+    .mdx-hero__image {
+      margin: 0 auto 2rem;
+      max-width: 860px;
+      width: 95%;
+    }
+
+    .mdx-hero__image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .mdx-hero__content p {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      margin: 0 auto;
+      max-width: 520px;
+      line-height: 1.6;
+    }
+
+    /* ── Below-hero markdown content ─────────────────────────────────────── */
+    .mdx-hero ~ .md-typeset {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+  </style>
+
+  <!-- Hero -->
+  <section class="mdx-hero">
+    <div class="mdx-hero__image">
+      <img src="assets/logo.png" alt="{{ config.site_name }}" draggable="false">
+    </div>
+    {% if config.site_description %}
+    <div class="mdx-hero__content">
+      <p>{{ config.site_description }}</p>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- Markdown content from index.md renders here -->
+  <div class="md-typeset">
+    {{ page.content }}
+  </div>
+{% endblock %}
+
+{% block content %}{% endblock %}
