@@ -22,4 +22,4 @@ Evolve is a system designed to help agents improve over time by learning from th
 ---
 ## Can't find what you're looking for?
 
-If you were looking for some of the ALTK components released in 2025, you can still find them [here](https://agenttoolkit.github.io/agent-lifecycle-toolkit/).
+If you were looking for some of the ALTK components released in 2025, you can still find them [here](https://agenttoolkit.github.io/altk-boost/).
